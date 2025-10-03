@@ -1,12 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
 import counterReducer from './CounterSlice'
-import AccountReducer from './AccountSlice'
+import TodoSlice from './TodoSlice'
 
 
 const store = configureStore({
     reducer : {
         counter : counterReducer,
-        account : AccountReducer
+        todo : TodoSlice
     }
 })
 
